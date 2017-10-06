@@ -6,6 +6,15 @@
       <router-link to="skills" tag="li">Skills</router-link>
     </ul>
     <router-view></router-view>
+
+    <div id="scene">
+      <p data-depth="0.2">My first Layer!</p>
+    </div>
+
+    <div class="starsBox" data-depth="0.2"></div>
+    <div class="starsBox" data-depth="0.5"></div>
+    <div class="starsBox" data-depth="1.2"></div>
+    
   </div>
 </template>
 
@@ -37,14 +46,44 @@ time, mark, audio, video {
 }
 body {
   line-height: 1.2;
+  overflow-x: hidden;
 }
 ol,
 ul {
   list-style: none;
 }
 /*** end of reset ***/
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Megrim', cursive;
+}
+p,a,span,li{
+  font-family: 'Raleway', sans-serif;
+}
 #app {
   text-align: center;
-  margin-top: 60px;
 }
+body {
+  background: #12172E;
+}
+
+.starsBox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  opacity: .5;
+  z-index: -1;
+}
+.starsBox span {
+  display: inline-block;
+  width: auto;
+  position: absolute;
+  border-radius: 100%;
+  transition: 100s linear;
+}
+
+
 </style>
