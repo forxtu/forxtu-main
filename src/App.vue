@@ -13,7 +13,7 @@
 
     <div class="starsBox" data-depth="0.2"></div>
     <div class="starsBox" data-depth="0.5"></div>
-    <div class="starsBox" data-depth="1.2"></div>
+
     
   </div>
 </template>
@@ -84,6 +84,5 @@ body {
   border-radius: 100%;
   transition: 100s linear;
 }
-
 
 </style>
