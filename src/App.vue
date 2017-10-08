@@ -47,6 +47,7 @@ time, mark, audio, video {
 body {
   line-height: 1.2;
   overflow-x: hidden;
+  background: #12172E;
 }
 ol,
 ul {
@@ -61,9 +62,6 @@ p,a,span,li{
 }
 #app {
   text-align: center;
-}
-body {
-  background: #12172E;
 }
 
 .starsBox {
