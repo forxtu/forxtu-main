@@ -2,8 +2,6 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-import tiltfx from './tiltfx'
-
 /* Parallax js */
 import Parallax from 'parallax-js'
 
