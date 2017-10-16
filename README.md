@@ -1,6 +1,6 @@
 # forxtu-main
 
-> Portfolio site with vue.js
+> Portfolio site with Vue.js
 
 ## Build Setup
 
