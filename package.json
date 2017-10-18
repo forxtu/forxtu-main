@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "parallax-js": "^3.1.0",
+    "tilt.js": "^1.2.0",
     "vue": "^2.4.2",
     "vue-router": "^2.7.0"
   },
