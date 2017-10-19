@@ -1,21 +1,24 @@
 <template>
   <div id="app">
-    <ul>
-      <router-link to="/" tag="li">Home</router-link>
-      <router-link to="about" tag="li">About</router-link>
-      <router-link to="skills" tag="li">Skills</router-link>
-    </ul>
-    <router-view></router-view>
+    
 
     <div id="scene">
       <p data-depth="0.2">My first Layer!</p>
     </div>
 
     <div class="starsBox" data-depth="0.2" data-tilt></div>
-    <div class="starsBox" data-depth="0.5" data-tilt></div>
+    <div class="starsBox" data-depth="0.5" data-tilt style="transform-style: preserve-3d" data-tilt-perspective="4000" data-tilt-speed="100"></div>
 
-    <div class="homepagebg" data-tilt style="transform-style: preserve-3d" data-tilt-perspective="2000" data-tilt-speed="100" >
+    <div class="homepagebg" data-tilt style="transform-style: preserve-3d" data-tilt-perspective="4000" data-tilt-speed="100" >
       <div class="homepagebg__wrap">
+
+      <ul>
+        <router-link to="/" tag="li">Home</router-link>
+        <router-link to="about" tag="li">About</router-link>
+        <router-link to="skills" tag="li">Skills</router-link>
+      </ul>
+      <router-view></router-view>
+
         <div class="text" style="transform: translateZ(20px)">forxtu</div>
         <div class="stars"></div>
         <div class="stars1"></div>
@@ -106,6 +109,7 @@ html {
     width: 100%;
     height: 100%;
     margin: 0;
+    overflow: hidden
   }
 }
 #app{
@@ -115,9 +119,11 @@ html {
 .homepagebg {
   display: block;
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 115%;
+  height: 115%;
   background: linear-gradient(to bottom, #020107 0%, #201b46 100%);
+  top: 5%;
+  right: 3%;
   .text {
     color: #FFF;
     position: absolute;
