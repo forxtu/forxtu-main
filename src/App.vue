@@ -1,10 +1,5 @@
 <template>
   <div id="app">
-    
-
-    <div id="scene">
-      <p data-depth="0.2">My first Layer!</p>
-    </div>
 
     <div class="starsBox" data-depth="0.2" data-tilt></div>
     <div class="starsBox" data-depth="0.5" data-tilt style="transform-style: preserve-3d" data-tilt-perspective="4000" data-tilt-speed="100"></div>
