@@ -6,7 +6,6 @@
 
     <div class="homepagebg" data-tilt style="transform-style: preserve-3d" data-tilt-perspective="4000" data-tilt-speed="100" >
       <div class="homepagebg__wrap">
-
       <ul>
         <router-link to="/" tag="li">Home</router-link>
         <router-link to="about" tag="li">About</router-link>
