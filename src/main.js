@@ -3,7 +3,7 @@ import App from './App'
 import router from './router'
 
 /* Parallax js */
-// import Parallax from 'parallax-js'
+import Parallax from 'parallax-js'
 
 Vue.config.productionTip = false
 
