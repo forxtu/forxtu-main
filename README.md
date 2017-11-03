@@ -1,4 +1,4 @@
-# forxtu-main
+# forxtu.pro
 
 > Portfolio site with Vue.js
 
