@@ -1,6 +1,7 @@
 # forxtu.pro
 
 > Portfolio site with Vue.js
+status: dev.
 
 ## Build Setup
 
