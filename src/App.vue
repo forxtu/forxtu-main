@@ -67,27 +67,6 @@ export default {
 //   text-align: center;
 // }
 
-// .starsBox {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-//   min-height: 100vh;
-//   min-width: 100vw;
-//   opacity: .5;
-//   z-index: -1;
-//   span {
-//     display: inline-block;
-//     width: auto;
-//     position: absolute;
-//     border-radius: 100%;
-//     transition: 100s linear;
-//   }
-// }
-
-
-
 .element{
 	width: 150px;
 	height: 150px;
