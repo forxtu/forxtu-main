@@ -2,10 +2,10 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+Vue.config.productionTip = false
+
 /* Parallax js */
 import Parallax from 'parallax-js'
-
-Vue.config.productionTip = false
 
 new Vue({
   el: '#app',
@@ -38,8 +38,8 @@ var _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator 
 }(function (t) {
   return t.fn.tilt = function (i) {
     var s = function () {
-        this.ticking || (requestAnimationFrame(g.bind(this)), this.ticking = !0)
-      },
+      this.ticking || (requestAnimationFrame(g.bind(this)), this.ticking = !0)
+    },
       e = function () {
         var i = this;
         t(this).on("mousemove", o), t(this).on("mouseenter", a), this.settings.reset && t(this).on("mouseleave", h), this.settings.glare && t(window).on("resize", u.bind(i))
@@ -68,9 +68,9 @@ var _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator 
           pageX: t(this).offset().left + t(this).outerWidth() / 2,
           pageY: t(this).offset().top + t(this).outerHeight() / 2
         }), {
-          x: i.pageX,
-          y: i.pageY
-        }
+            x: i.pageX,
+            y: i.pageY
+          }
       },
       o = function (t) {
         this.mousePositions = r(t), s.call(this)
@@ -97,7 +97,7 @@ var _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator 
         }
       },
       g = function () {
-        return this.transforms = l.call(this), this.reset ? (this.reset = !1, t(this).css("transform", "perspective(" + this.settings.perspective + "px) rotateX(0deg) rotateY(0deg)"), void(this.settings.glare && (this.glareElement.css("transform", "rotate(180deg) translate(-50%, -50%)"), this.glareElement.css("opacity", "0")))) : (t(this).css("transform", "perspective(" + this.settings.perspective + "px) rotateX(" + ("x" === this.settings.axis ? 0 : this.transforms.tiltY) + "deg) rotateY(" + ("y" === this.settings.axis ? 0 : this.transforms.tiltX) + "deg) scale3d(" + this.settings.scale + "," + this.settings.scale + "," + this.settings.scale + ")"), this.settings.glare && (this.glareElement.css("transform", "rotate(" + this.transforms.angle + "deg) translate(-50%, -50%)"), this.glareElement.css("opacity", "" + this.transforms.percentageY * this.settings.maxGlare / 100)), t(this).trigger("change", [this.transforms]), void(this.ticking = !1))
+        return this.transforms = l.call(this), this.reset ? (this.reset = !1, t(this).css("transform", "perspective(" + this.settings.perspective + "px) rotateX(0deg) rotateY(0deg)"), void (this.settings.glare && (this.glareElement.css("transform", "rotate(180deg) translate(-50%, -50%)"), this.glareElement.css("opacity", "0")))) : (t(this).css("transform", "perspective(" + this.settings.perspective + "px) rotateX(" + ("x" === this.settings.axis ? 0 : this.transforms.tiltY) + "deg) rotateY(" + ("y" === this.settings.axis ? 0 : this.transforms.tiltX) + "deg) scale3d(" + this.settings.scale + "," + this.settings.scale + "," + this.settings.scale + ")"), this.settings.glare && (this.glareElement.css("transform", "rotate(" + this.transforms.angle + "deg) translate(-50%, -50%)"), this.glareElement.css("opacity", "" + this.transforms.percentageY * this.settings.maxGlare / 100)), t(this).trigger("change", [this.transforms]), void (this.ticking = !1))
       },
       c = function () {
         var i = this.settings.glarePrerender;
