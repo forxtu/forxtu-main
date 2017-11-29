@@ -28,12 +28,6 @@ export default {
 </script>
 
 <style lang="scss">
-.element{
-	width: 150px;
-	height: 150px;
-	background: red;
-}
-
 html {
   height: 100%;
   body {
