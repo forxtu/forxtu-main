@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-
     <div class="homepagebg" data-tilt style="transform-style: preserve-3d" data-tilt-perspective="4000" data-tilt-speed="100" >
       <div class="homepagebg__wrap">
       <ul>
@@ -9,7 +8,6 @@
         <router-link to="skills" tag="li">Skills</router-link>
       </ul>
       <router-view></router-view>
-
         <div class="text" style="transform: translateZ(20px)">forxtu</div>
         <div class="stars"></div>
         <div class="stars1"></div>
@@ -17,7 +15,6 @@
         <div class="shooting-stars"></div>
       </div>
     </div>
-
   </div>
 </template>
 
